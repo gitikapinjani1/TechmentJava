@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Select the seat number you want to book</h1>
+    <table>
+        <tr>
+           <td>
+               <input id="seat1" type="button" value="seat No. 1" onclick="booked1()" style="background-color: greenyellow;">
+           </td>
+           <td>
+            <input id="seat2" type="button" value="seat No. 2" onclick="booked2()" style="background-color: greenyellow;">
+        </td>
+        <td>
+            <input id="seat3" type="button" value="seat No. 3" onclick="booked3()" style="background-color: greenyellow;">
+        </td>
+        <td>
+            <input id="seat4" type="button" value="seat No. 4" onclick="booked4()" style="background-color: greenyellow;">
+        </td>
+        <td>
+            <input id="seat5" type="button" value="seat No. 5" onclick="booked5()" style="background-color: greenyellow;">
+        </td>
+        </tr>
+        <tr>
+            <td>
+                <input id="seat6" type="button" value="seat No. 6" onclick="booked6()" style="background-color: greenyellow;">
+            </td>
+            <td>
+             <input id="seat7" type="button" value="seat No. 7" onclick="booked7()" style="background-color: greenyellow;">
+         </td>
+         <td>
+             <input id="seat8" type="button" value="seat No. 8" onclick="booked8()" style="background-color: greenyellow;">
+         </td>
+         <td>
+             <input id="seat9" type="button" value="seat No. 9" onclick="booked9()" style="background-color: greenyellow;">
+         </td>
+         <td>
+             <input id="seat10" type="button" value="seat No. 10" onclick="booked10()" style="background-color: greenyellow;">
+         </td>
+         </tr>
+
+         <tr>
+            <td>
+                <input id="seat11" type="button" value="seat No. 11" onclick="booked11()" style="background-color: greenyellow;">
+            </td>
+            <td>
+             <input id="seat12" type="button" value="seat No. 12" onclick="booked12()" style="background-color: greenyellow;">
+         </td>
+         <td>
+             <input id="seat13" type="button" value="seat No. 13" onclick="booked13()" style="background-color: greenyellow;">
+         </td>
+         <td>
+             <input id="seat14" type="button" value="seat No. 14" onclick="booked14()" style="background-color: greenyellow;">
+         </td>
+         <td>
+             <input id="seat15" type="button" value="seat No. 15" onclick="booked15()" style="background-color: greenyellow;">
+         </td>
+         </tr>
+    </table>
+    <tab<h3>screen this side</h3>
+    <h3>You have choosen Seat no. </h3>
+    <h3 id="selection"> </h3>
+    <input id="pay" type="button" onclick="price()" value=" pay ">
+</body>
+<script>
+    let count=0;
+    booked1=()=>{
+        document.getElementById("seat1").style.backgroundColor="grey";
+        count=count+1;
+        document.getElementById("selection").innerHTML=" 1";
+    }
+    booked2=()=>{
+        document.getElementById("seat2").style.backgroundColor="grey";
+        count=count+1;
+        document.getElementById("selection").innerHTML=" 2";
+    }
+    booked3=()=>{
+        document.getElementById("seat3").style.backgroundColor="grey";
+        count=count+1;
+    }
+    booked4=()=>{
+        document.getElementById("seat4").style.backgroundColor="grey";
+        count=count+1;
+    }
+    booked5=()=>{
+        document.getElementById("seat5").style.backgroundColor="grey";
+        count=count+1;
+    }
+    booked6=()=>{
+        document.getElementById("seat6").style.backgroundColor="grey";
+        count=count+1;
+    }
+    booked7=()=>{
+        document.getElementById("seat7").style.backgroundColor="grey";
+        count=count+1;
+    }
+    booked8=()=>{
+        document.getElementById("seat8").style.backgroundColor="grey";
+        count=count+1;
+    }
+    booked9=()=>{
+        document.getElementById("seat9").style.backgroundColor="grey";
+        count=count+1;
+    }
+    booked10=()=>{
+        document.getElementById("seat10").style.backgroundColor="grey";
+        count=count+1;
+    }
+    booked11=()=>{
+        document.getElementById("seat11").style.backgroundColor="grey";
+        count=count+1;
+    }
+    booked12=()=>{
+        document.getElementById("seat12").style.backgroundColor="grey";
+        count=count+1;
+    }
+    booked13=()=>{
+        document.getElementById("seat13").style.backgroundColor="grey";
+        count=count+1;
+    }
+    booked14=()=>{
+        document.getElementById("seat14").style.backgroundColor="grey";
+        count=count+1;
+    }
+    booked15=()=>{
+        document.getElementById("seat15").style.backgroundColor="grey";
+        count=count+1;
+    }
+    price=()=>{
+        let totalPrice =100*count;
+        document.getElementById("pay").value=" confirm pay Rs "+totalPrice;
+    }
+</script>
+</html>

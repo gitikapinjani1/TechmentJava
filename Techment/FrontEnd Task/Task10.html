@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="number" id="num1" placeholder="Enter Table number">
+        <input type="number" id="num2" placeholder="enter the limit">
+        <input type="button" onclick="table()" value="click me">
+
+    </form>
+</body>
+<script>
+    table=()=>{
+        let num1=document.getElementById("num1").value;
+        let num2=document.getElementById("num2").value;
+        for(var i=1;i<=num2;i++)
+        {
+            document.write(num1+" * " +i+ " = "+num1*i+"<br/>");
+        }
+    }
+</script>
+</html>

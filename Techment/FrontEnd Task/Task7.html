@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <form>
+       Enter Number 1 -  <input type="number" id="num1" /><br>
+       Enter Number 1 - <input type="number" id="num2"/><br><br>
+       <input type="submit" onclick="add()" value="+">
+       <input type="submit" onclick="sub()" value="-">
+       <input type="submit" onclick="mul()" value="*">
+       <input type="submit" onclick="div()" value="/">
+       <input id="res" 
+    </form><p id="res"></p>
+</body>
+       
+    <script>
+        add=()=>{
+            var a=document.getElementById("num1").value;
+        var b=document.getElementById("num2").value;
+            var result=parseInt(a)+parseInt(b);
+            document.getElementById("res").innerHTML="result is "+result;
+        }
+    </script>
+</html>
